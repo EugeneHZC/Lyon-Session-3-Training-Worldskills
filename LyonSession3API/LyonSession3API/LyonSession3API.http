@@ -1,0 +1,6 @@
+@LyonSession3API_HostAddress = http://localhost:5078
+
+GET {{LyonSession3API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
