@@ -9,7 +9,7 @@ namespace LyonSession3API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private BelleCroissantLyonnaisContext db = new BelleCroissantLyonnaisContext();
+        BelleCroissantLyonnaisContext db = new BelleCroissantLyonnaisContext();
 
         [HttpGet]
         public IEnumerable<Product> GetAllProducts()

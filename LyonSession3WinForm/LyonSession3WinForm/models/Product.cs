@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace LyonSession3API.models;
 
@@ -26,6 +25,5 @@ public partial class Product
 
     public string? Ingredients { get; set; }
 
-    [JsonIgnore]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }
